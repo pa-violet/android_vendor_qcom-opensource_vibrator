@@ -113,7 +113,7 @@ InputFFDevice::InputFFDevice()
                 mSupportGain = true;
 
             auto target = GetProperty("ro.board.platform", "");
-            if (target == "lahaina" || target=="shima") {
+            if (target == "lahaina" || target=="shima" || target=="yupik") {
                 mSupportExternalControl = true;
             } else {
                 mSupportExternalControl = false;
